@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: #000;
+    background: rgb(37,35,79);
+    background: radial-gradient(circle, rgba(37,35,79,1) 0%, rgba(8,8,82,1) 50%, rgba(37,35,79,1) 100%);
 }
 
 div.conteudo{
@@ -18,9 +19,8 @@ div.conteudo{
 }
 
 form{
-    width: 300px;
     display: flex;
-    padding: 20px;
+    /*padding: 20px;*/
     
 }
 
@@ -76,6 +76,40 @@ form{
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+.principal {
+    display: grid;
+    width: 550px;
+    height: 270px;
+}
+
+.info {
+    padding: 40px;
+    position: absolute;
+    right: -20px;
+}
+
+.container {
+    position: absolute;
+    bottom: 20px;
+    padding-left: 240px;
+}
+
+.formulario_conteudo {
+    padding-top: 50px;
+    padding-left: 15px;
+    width: 220px;
+    height: 40px;
+}
+
+.formulario_conteudo > * {
+    margin: 5px 0;
+}
+#link_made{
+    text-decoration: none;
+    text-decoration: double;
+    color: white;
 }
 
 @keyframes glowing {

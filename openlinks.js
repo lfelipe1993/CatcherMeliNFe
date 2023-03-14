@@ -1,5 +1,5 @@
 document.querySelectorAll(".andes-card__content.row-card-container").forEach(function (e){ 
-    if ((e.querySelector("div.primary-action > a > span > span") != null && e.querySelector("div.primary-action > a > span > span") != "undefined") && 
+    if ((e.querySelector("div.primary-action > a > span > span") != null && typeof e.querySelector("div.primary-action > a > span > span") !== "undefined") && 
         (e.querySelector("div.primary-action > a > span > span").innerText == "Informar a NF-e" ||
     e.querySelector("div.primary-action > a > span > span").innerText == "Adicionar dados fiscais")
 ){

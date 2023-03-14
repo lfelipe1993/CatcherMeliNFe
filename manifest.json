@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "CatcherMeliNFe",
   "description": "Pegar dados fiscais dos pedidos no Mercado Livre.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "icons": {
     "48": "icons/48.png",
     "128": "icons/128.png"
