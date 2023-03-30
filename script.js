@@ -1,5 +1,6 @@
 const form = document.querySelector('form');
 const info = document.getElementById('bt_info');
+const btCopy = document.getElementById('bt_copy');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -11,6 +12,11 @@ form.addEventListener('submit', async (e) => {
 info.addEventListener('click',  (e) => {
     e.preventDefault();
     executeFunc();
+});
+
+btCopy.addEventListener('click',  (e) => {
+    e.preventDefault();
+    executeCopy();
 });
 
 function setText(resultado){
@@ -57,7 +63,15 @@ function executeFunc(){
     });
     
     }
-    
+
+    function executeCopy(){
+
+        var textData = document.getElementById('story');
+        textData.select();
+        document.execCommand('copy');
+
+
+    }
     
     async function getAllTabs(tabChromeTab,chromeTabId) {
 

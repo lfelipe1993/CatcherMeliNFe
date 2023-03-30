@@ -97,7 +97,7 @@ form{
 }
 
 .formulario_conteudo {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 15px;
     width: 220px;
     height: 40px;
@@ -111,6 +111,10 @@ form{
     text-decoration: double;
     color: white;
 }
+
+textarea {
+    resize: none;
+  }
 
 @keyframes glowing {
     0% { background-position: 0 0; }
